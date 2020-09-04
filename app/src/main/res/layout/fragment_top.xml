@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:inputType="text"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/All_List"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="#FFFFFF"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="30dp"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:text="ALL TODO's"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dip"/>
+
+        <RadioButton
+            android:id="@+id/Complete_List"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:button="@null"
+            android:drawablePadding="30dp"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:text="Completed TODO's"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/Incomplete_List"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:button="@null"
+            android:drawablePadding="30dp"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:text="Incomplete TODO's"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:gravity="center|right">
+
+        <EditText
+            android:id="@+id/Search_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_bar"
+            android:ems="10"
+            android:hint="Search TODO's"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:gravity="center" >
+        </EditText>
+
+    </LinearLayout>
+
+
+</LinearLayout>
