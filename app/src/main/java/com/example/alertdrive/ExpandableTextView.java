@@ -63,17 +63,4 @@ public class ExpandableTextView extends AppCompatTextView {
         }
     }
 
-    public CharSequence getOriginalText() {
-        return originalText;
-    }
-
-    public void setTrimLength(int trimLength) {
-        this.trimLength = trimLength;
-        trimmedText = getTrimmedText(originalText);
-        setText();
-    }
-
-    public int getTrimLength() {
-        return trimLength;
-    }
 }
